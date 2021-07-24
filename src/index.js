@@ -10,7 +10,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 const publicDirectoryPath = path.join(__dirname, "../public");
 
@@ -63,6 +63,6 @@ io.on("connection", (socket) => {
   })
 })
 
-server.listen(PORT, () => {
-  console.log(`Server is up on port ${PORT}!`);
+server.listen(port, () => {
+  console.log(`Server is up on port ${port}!`);
 });

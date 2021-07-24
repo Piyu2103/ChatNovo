@@ -2,7 +2,11 @@
   "name": "chatnovo",
   "version": "1.0.0",
   "description": "Real-Time Chat Application",
-  "main": "index.js",
+  "engines": {
+    "node": "15.3.0",
+    "npm": "7.7.6"
+  },
+  "main":"index.js",
   "dependencies": {
     "abbrev": "^1.1.1",
     "accepts": "^1.3.7",
@@ -160,8 +164,8 @@
     "nodemon": "^2.0.12"
   },
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "start":"node src/index.js",
+    "dev":"nodemon src/index.js"
   },
   "keywords": [],
   "author": "Piyush Singhal",
